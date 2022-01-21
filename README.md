@@ -1,3 +1,24 @@
+# Renovate tutorial
+
+["How to Update Dependencies Safely and Automatically with GitHub Actions and Renovate"](https://www.freecodecamp.org/news/update-dependencies-automatically-with-github-actions-and-renovate/) by Ramón Morcillo
+
+### Error: MiniCssExtractPlugin is not a constructor
+
+https://github.com/facebook/create-react-app/issues/11930#issuecomment-1013480827
+
+> I temporarily fixed it by adding:
+
+``` json
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  },
+```
+
+in `package.json`.
+
+Then run `npm install` so that `package-lock.json` will be updated
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
